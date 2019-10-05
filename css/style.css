@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  font-size: 16px;
+  text-align: center; }
+  .header .logo {
+    width: 1.73913rem;
+    line-height: 1.08696rem;
+    background: pink; }
+  .header .nav {
+    display: flex; }
+    .header .nav .navItem {
+      width: 1.08696rem;
+      line-height: 1.08696rem;
+      background: #aaa; }
+
+.pictures {
+  width: 7.3913rem;
+  margin: 0.43478rem auto;
+  font-size: 16px;
+  overflow: hidden; }
+  .pictures .inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.21739rem; }
+    .pictures .inner .picture {
+      width: 1.52174rem;
+      line-height: 1.52174rem;
+      text-align: center;
+      background: #666;
+      margin: 0.21739rem; }

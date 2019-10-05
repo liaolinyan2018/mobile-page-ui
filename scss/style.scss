@@ -1,0 +1,44 @@
+@function px2rem( $px ){
+  @return $px/$designWidth*10 + rem;
+}
+$designWidth : 460;
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  font-size: 16px;
+  text-align: center;
+  .logo {
+    width: px2rem(80);
+    line-height: px2rem(50);
+    background: pink;
+  }
+  .nav {
+    display: flex;
+    .navItem {
+      width: px2rem(50);
+      line-height: px2rem(50);
+      background: #aaa;
+    } 
+  }
+}
+
+.pictures {
+  width: px2rem(340);
+  margin: px2rem(20) auto;
+  font-size: 16px;
+  overflow: hidden;
+  .inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 px2rem(-10);
+    .picture {
+      width: px2rem(70);
+      line-height: px2rem(70);
+      text-align: center;
+      background: #666;
+      margin: px2rem(10);
+    }
+  }
+  
+}
