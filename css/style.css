@@ -5,28 +5,28 @@
   font-size: 16px;
   text-align: center; }
   .header .logo {
-    width: 1.73913rem;
-    line-height: 1.08696rem;
+    width: 2.22222rem;
+    line-height: 1.38889rem;
     background: pink; }
   .header .nav {
     display: flex; }
     .header .nav .navItem {
-      width: 1.08696rem;
-      line-height: 1.08696rem;
+      width: 1.38889rem;
+      line-height: 1.38889rem;
       background: #aaa; }
 
 .pictures {
-  width: 7.3913rem;
-  margin: 0.43478rem auto;
+  width: 9.44444rem;
+  margin: 0.55556rem auto;
   font-size: 16px;
   overflow: hidden; }
   .pictures .inner {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -0.21739rem; }
+    margin: 0 -0.27778rem; }
     .pictures .inner .picture {
-      width: 1.52174rem;
-      line-height: 1.52174rem;
+      width: 1.94444rem;
+      line-height: 1.94444rem;
       text-align: center;
       background: #666;
-      margin: 0.21739rem; }
+      margin: 0.27778rem; }

@@ -1,0 +1,124 @@
+@function pxtorem($px) {
+  @return $px/$designWidth * 10 + rem;
+}
+$designWidth: 320;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  .header {
+    background: #eee;
+    text-align: center;
+    position: relative;
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        width: pxtorem(50);
+        background: black;
+        line-height: pxtorem(40);
+        color: white;
+      }
+      .menu {
+        display: block;
+        width: pxtorem(50);
+        line-height: pxtorem(24);
+        padding: pxtorem(8) 0;
+        color: #aaa;
+        &:active {
+          color: #000;
+        }
+      }
+    }
+    .nav {
+      line-height: pxtorem(24);
+      display: none;
+      float: right;
+      background: #fff;
+      position: absolute;
+      right: pxtorem(8);
+      top: pxtorem(40);
+      z-index: 111;
+      .navItem {
+        border-bottom: 0.5px solid #ccc;
+        padding: pxtorem(20);
+      }
+    }
+  }
+
+  .banner {
+    width: auto;
+    height: pxtorem(214);
+    margin: pxtorem(10) auto 0;
+    background: transparent url('/images/banner.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .pictures {
+    width: pxtorem(320);
+    overflow: hidden;
+    .pictures-inner {
+      display: flex;
+      flex-flow: row wrap;
+      .picture {
+        width: pxtorem(150);
+        height: pxtorem(150);
+        margin: pxtorem(10) pxtorem(5) 0 pxtorem(5);
+        border-radius: pxtorem(3);
+        &.picture-1 {
+          background: transparent url('/images/p1.jpg') no-repeat center;
+          background-size: cover;
+        }
+        &.picture-2 {
+          background: transparent url('/images/p2.jpg') no-repeat center;
+          background-size: cover;
+        }
+        &.picture-3 {
+          background: transparent url('/images/p3.jpg') no-repeat center;
+          background-size: cover;
+        }
+        &.picture-4 {
+          background: transparent url('/images/p4.jpg') no-repeat center;
+          background-size: cover;
+        }
+        &.picture-5 {
+          background: transparent url('/images/p5.jpg') no-repeat center;
+          background-size: cover;
+        }
+        &.picture-6 {
+          background: transparent url('/images/p6.jpg') no-repeat center;
+          background-size: cover;
+        }
+        &.picture-7 {
+          background: transparent url('/images/p7.jpg') no-repeat center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .art {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* 水平居中,会被子继承 */
+    > * {
+      margin-top: pxtorem(10);
+    }
+    .aside {
+      .aside-child {
+        background: red;
+        padding: pxtorem(50) 0; /* 垂直居中 */
+      }
+    }
+    .main {
+      .main-child {
+        padding: pxtorem(50) 0;
+        background: green;
+      }
+    }
+  }
+}
